@@ -1,4 +1,74 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'styles';
+@import '../node_modules/aos/src/sass/aos.scss';
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url("../fonts/Gotham-Bold.otf");
+}
+@font-face {
+    font-family: "Gotham";
+    src: url("../fonts/Gotham-Medium.otf");
+}
+.font-weight-normal {
+    font-family: 'Gotham' !important;
+}
+.font-weight-bold {
+    font-family: 'Gotham-Bold' !important;
+}
+
+a {
+    transition: all ease 0.5s;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+body {
+    font-family: 'Gotham';
+    font-size: 16px;
+}
+
+.container-cercas {
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
 
 @import "./functions/margin";
 @import "./functions/fonts";
+
+$yellow: #ffda00;
+$green: #7DC349;
+$blue: #2E9EFF;
+$red: #D61F23;
+
+.bg {
+    &-green {
+        background: $green;
+    }
+    &-yellow {
+        background: $yellow;
+    }
+    &-blue {
+        background: $blue;
+    }
+    &-red {
+        background: $red;
+    }
+}
+
+.c {
+    &-red {
+        color: $red;
+    }
+}
+
+@import "./components/nav";
+@import "./components/footer";
+
+@import "./pages/home.scss";

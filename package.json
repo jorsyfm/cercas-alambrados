@@ -18,6 +18,7 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.4.1"
   }
 }
